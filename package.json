@@ -7,7 +7,7 @@
     "start-dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "serve": "http-server dist",
-    "test": "karma start"
+    "test": "karma start --browsers Firefox"
   },
   "keywords": [],
   "author": "your_name <your_email@mail.com>",
@@ -30,7 +30,7 @@
     "karma": "5.2.3",
     "karma-chrome-launcher": "3.1.1",
     "karma-eslint": "2.2.0",
-    "karma-firefox-launcher": "2.1.2",
+    "karma-firefox-launcher": "^2.1.2",
     "karma-jasmine": "4.0.2",
     "karma-sourcemap-loader": "0.3.8",
     "karma-webpack": "5.0.0",
