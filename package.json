@@ -7,7 +7,7 @@
     "start-dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "serve": "http-server dist",
-    "test": "karma start --browsers Firefox"
+    "test": "karma start"
   },
   "keywords": [],
   "author": "your_name <your_email@mail.com>",
