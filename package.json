@@ -7,7 +7,8 @@
     "start-dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "serve": "http-server dist",
-    "test": "karma start"
+    "test": "karma start",
+    "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
   "author": "your_name <your_email@mail.com>",
@@ -16,6 +17,7 @@
     "@babel/core": "7.20.2",
     "@babel/preset-env": "7.20.2",
     "babel-loader": "9.1.0",
+    "codeceptjs": "^3.3.7",
     "copy-webpack-plugin": "11.0.0",
     "css-loader": "6.7.2",
     "eslint": "8.28.0",
@@ -34,6 +36,7 @@
     "karma-jasmine": "4.0.2",
     "karma-sourcemap-loader": "0.3.8",
     "karma-webpack": "5.0.0",
+    "puppeteer": "^19.6.0",
     "style-loader": "3.3.1",
     "webpack": "5.75.0",
     "webpack-cli": "5.0.0",
