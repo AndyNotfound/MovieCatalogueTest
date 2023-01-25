@@ -33,6 +33,7 @@ describe("Liking A Movie", () => {
     const movie = await FavoriteMovieIdb.getMovie(1);
 
     expect(movie).toEqual({ id: 1 });
+
     FavoriteMovieIdb.deleteMovie(1);
   });
 
@@ -41,10 +42,8 @@ describe("Liking A Movie", () => {
 
     // Tambahkan film dengan ID 1 ke daftar film yang disukai
     await FavoriteMovieIdb.putMovie({ id: 1 });
-
     // Simulasikan pengguna menekan tombol suka film
     document.querySelector("#likeButton").dispatchEvent(new Event("click"));
-
     // tidak ada film yang ganda
     expect(await FavoriteMovieIdb.getAllMovies()).toEqual([{ id: 1 }]);
 
@@ -55,6 +54,7 @@ describe("Liking A Movie", () => {
     await TestFactories.createLikeButtonPresenterWithMovie({});
 
     document.querySelector("#likeButton").dispatchEvent(new Event("click"));
+
     expect(await FavoriteMovieIdb.getAllMovies()).toEqual([]);
   });
 });

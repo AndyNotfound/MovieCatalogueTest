@@ -1,11 +1,11 @@
 import FavoriteMovieIdb from "../src/scripts/data/favorite-movie-idb";
 import * as TestFactories from "./helpers/testFactories";
 
-describe("Unliking A Movie", () => {
-  const addLikeButtonContainer = () => {
-    document.body.innerHTML = '<div id="likeButtonContainer"></div>';
-  };
+const addLikeButtonContainer = () => {
+  document.body.innerHTML = '<div id="likeButtonContainer"></div>';
+};
 
+describe("Unliking A Movie", () => {
   beforeEach(async () => {
     addLikeButtonContainer();
     await FavoriteMovieIdb.putMovie({ id: 1 });
